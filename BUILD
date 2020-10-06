@@ -5,6 +5,9 @@ dotnet_library(
     srcs = [
         "Sample.cs",
     ],
+    deps = [
+        "@io_bazel_rules_dotnet//dotnet/stdlib:system.dll",
+    ],
 )
 
 dotnet_library(
